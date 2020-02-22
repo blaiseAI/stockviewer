@@ -1,0 +1,63 @@
+@import "_reset.scss";
+@import "_mixins.scss";
+@import "_typography.scss";
+@import "_header.scss";
+@import "_form.scss";
+@import "_utility.scss";
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.stock {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+img {
+    margin-top: 200px;
+    max-width: 10%;
+    align-self: center;
+}
+
+.display {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stock-view {
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+}
+
+.stock-preview-detail {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.stock-preview {
+    width: 400px;
+}
+
+.price {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.details {
+    margin-top: 10px;
+}
+
+.hr {
+    text-align: left;
+    border-bottom: 3px solid #000;
+}
+
+#chart {
+    margin: 100px;
+    width: 100%;
+}

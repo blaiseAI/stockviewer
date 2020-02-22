@@ -1,0 +1,10 @@
+$primary: #4D2D52;
+header {
+    background: $primary;
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    color: #fff;
+}

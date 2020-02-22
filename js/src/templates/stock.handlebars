@@ -1,0 +1,37 @@
+<section class="display">
+    <div class="stock-view">
+        <div class="stock-preview">
+            <div class="hr">
+                <h1>{{toUpper symbol}}</h1>
+            </div>
+            <div class="stock-preview-detail">
+                <div class="price">{{currency price}}</div>
+            <div class="details">Zone: {{zone}}</div>
+            <div class="details">Last Updated: {{date}}</div>
+            </div>
+        </div>
+        <div class="stock-preview-table">
+           <div class="hr">
+                <h1>Past 5 Days</h1>
+           </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Stock Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each pastDays}}
+                    <tr>
+                        <td>{{x}}</td>
+                        <td>{{currency y}}</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+   <div id="chart">
+</div>
+</section>

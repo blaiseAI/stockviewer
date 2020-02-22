@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Stock Symbol Application</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="theme-color" content="#fafafa" />
+
+</head>
+
+<body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+    <header>
+        <h1>Stock Viewer</h1>
+    </header>
+
+    <!-- Add your site or application content here -->
+    <!-- Add your site or application content here -->
+    <form class="frm symbol">
+        <div class="form-nav container">
+            <p>Trading View</p>
+            <div class="input">
+                <input type="text" id="symbol" name="symbol" placeholder="Search" autofocus/>
+                <button type="submit"><i class="material-icons">search</i></button>
+            </div>
+        </div>
+    </form>
+
+    <section class="stock">
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="js/vendor/handlebars.runtime-v4.7.3.js"></script>
+    <script src="js/dist/stock-template.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/dist/main.js"></script>
+</body>
+
+</html>

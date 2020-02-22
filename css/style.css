@@ -1,0 +1,420 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*------------------------------------*\
+    # Simple Typography Settings
+\*------------------------------------*/
+/*------------------------------------*\
+    # Type
+\*------------------------------------*/
+*,
+html,
+body {
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 36px;
+  color: #000000;
+  line-height: 1.25em;
+  font-weight: 700;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 1.92308rem;
+  margin-bottom: 18.46154px;
+}
+
+h3 {
+  font-size: 1.66667rem;
+  margin-bottom: 16px;
+}
+
+h4 {
+  font-size: 1.47059rem;
+  margin-bottom: 14.11765px;
+}
+
+h5 {
+  font-size: 1.38889rem;
+  margin-bottom: 13.33333px;
+}
+
+h6 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 1.0625rem;
+  line-height: 1.5em;
+  color: #505050;
+}
+
+p:last-of-type {
+  margin-bottom: 0;
+}
+
+a {
+  color: #459bd9;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #1f6699;
+}
+
+ul,
+ol {
+  margin: 20px 0 0 20px;
+}
+
+ul li,
+ol li {
+  margin-top: 10px;
+  line-height: 1.5em;
+  color: #505050;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  margin-top: 0;
+}
+
+ul li {
+  list-style: disc;
+}
+
+ul ul li {
+  list-style: circle;
+}
+
+ol li {
+  list-style: decimal;
+}
+
+hr {
+  height: 1px;
+  margin: 30px 0;
+  border: none;
+  background-color: #DADADA;
+}
+
+blockquote {
+  margin: 30px 0;
+  font-size: 1.4375rem;
+  line-height: 1.5em;
+  color: #505050;
+  text-align: center;
+  font-style: italic;
+}
+
+table {
+  width: 100%;
+  margin: 30px 0;
+  border-collapse: collapse;
+}
+
+table,
+td,
+th {
+  border: 1px solid #DADADA;
+  text-align: left;
+}
+
+th {
+  font-weight: 800;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+figure {
+  margin: 30px 0;
+}
+
+figure img {
+  margin: 0;
+}
+
+figcaption {
+  margin-top: 10px;
+  color: #6a6a6a;
+  font-size: 16px;
+}
+
+pre {
+  display: block;
+  margin: 0 0 40px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #DADADA;
+  overflow: auto;
+  border-radius: 3px;
+}
+
+pre code {
+  position: static;
+  padding: 0;
+  border: none;
+  line-height: 1.5em;
+}
+
+code {
+  position: relative;
+  top: -0.2em;
+  padding: 3px;
+  font-family: Courier New, Courier, monospace;
+  font-size: 0.88542rem;
+  color: #282828;
+  line-height: 1em;
+  pointer-events: none;
+  border: 1px solid #DADADA;
+  border-radius: 3px;
+}
+
+em,
+i,
+.italic {
+  font-style: italic;
+}
+
+strong,
+b,
+.bold {
+  font-weight: 800;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 30px 0;
+}
+
+header {
+  background: #4D2D52;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header h1 {
+  color: #fff;
+}
+
+form {
+  background: #110f1d;
+  color: #fff;
+}
+
+.form-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+}
+
+.form-nav p {
+  color: #fff;
+  font-weight: 700;
+}
+
+.input {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 150px;
+  border-radius: 5px;
+  background: #1D1A31;
+}
+
+button {
+  border: none;
+  background: none;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+label {
+  background: #000;
+}
+
+input {
+  border: none;
+  background: none;
+  width: 400px;
+  outline: none;
+  padding: 0.5rem;
+  color: #fff;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.stock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+img {
+  margin-top: 200px;
+  max-width: 10%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.stock-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 100px;
+}
+
+.stock-preview-detail {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.stock-preview {
+  width: 400px;
+}
+
+.price {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.details {
+  margin-top: 10px;
+}
+
+.hr {
+  text-align: left;
+  border-bottom: 3px solid #000;
+}
+
+#chart {
+  margin: 100px;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

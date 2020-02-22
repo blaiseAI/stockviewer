@@ -1,0 +1,47 @@
+$bgcolor: rgb(17, 15, 29);
+$inputbgcolor: #1D1A31;
+$primaryText: #fff;
+form {
+    background: $bgcolor;
+    color: $primaryText;
+}
+
+.form-nav {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    p {
+        color: $primaryText;
+        font-weight: 700;
+    }
+}
+
+.input {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+    border-radius: 5px;
+    background: $inputbgcolor;
+}
+
+button {
+    border: none;
+    background: none;
+    color: $primaryText;
+    outline: none;
+    cursor: pointer;
+}
+
+label {
+    background: #000;
+}
+
+input {
+    border: none;
+    background: none;
+    width: 400px;
+    outline: none;
+    padding: 0.5rem;
+    color: $primaryText;
+}
