@@ -19,9 +19,12 @@
   Handlebars.registerHelper('toUpper', function (value) {
     // pretty widespread support for toLocaleString() in browsers now, so  ...
     return value.toUpperCase();
-  });
-  var htmlImgTem = "\n    <img src=\"../img/trading.svg\">\n    <p>Waiting for Stock Data ..</p>\n";
-  document.querySelector('.stock').innerHTML = htmlImgTem;
+  }); // const htmlImgTem = `
+  //     <img src="./img/trading.svg">
+  //     <p>Waiting for Stock Data ..</p>
+  // `
+  // document.querySelector('.stock').innerHTML = htmlImgTem;
+
   /**
    * Display the current price and other information for a stock.
    * @param {HTMLElement} el DOM element parent for the display of the data. Must
