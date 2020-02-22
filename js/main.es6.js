@@ -17,7 +17,7 @@ Handlebars.registerHelper('toUpper', (value) => {
 });
 
 const htmlImgTem = `
-    <img src="../img/trading.svg">
+    <img src="./img/trading.svg">
     <p>Waiting for Stock Data ..</p>
 `
 document.querySelector('.stock').innerHTML = htmlImgTem;
