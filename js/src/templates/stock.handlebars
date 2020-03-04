@@ -1,6 +1,6 @@
-<section class="display">
-    <div class="stock-view">
-        <div class="stock-preview">
+<section class="container-fluid">
+    <div class="row p-3 mt-3">
+        <div class="col-sm-12 col-md-5">
             <div class="hr">
                 <h1>{{toUpper symbol}}</h1>
             </div>
@@ -9,13 +9,12 @@
             <div class="details">Zone: {{zone}}</div>
             <div class="details">Last Updated: {{date}}</div>
             </div>
-        </div>
-        <div class="stock-preview-table">
+        <div class="">
            <div class="hr">
                 <h1>Past 5 Days</h1>
            </div>
-            <table>
-                <thead>
+            <table class="table table-hover">
+                <thead class="thead-light">
                     <tr>
                         <th>Date</th>
                         <th>Stock Price</th>
@@ -32,6 +31,7 @@
             </table>
         </div>
     </div>
-   <div id="chart">
+     <div class="col-12 col-md-7" id="chart"></div>
+    </div>
 </div>
 </section>
