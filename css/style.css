@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
-@import url(https://fonts.googleapis.com/css?family=Roboto);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -285,34 +284,23 @@ header h1 {
 }
 
 form {
-  background: #110f1d;
-  color: #fff;
-}
-
-.form-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0.5rem;
-}
-
-.form-nav p {
+  background: #402544;
   color: #fff;
-  font-weight: 700;
 }
 
 .input {
-  width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 150px;
   border-radius: 5px;
   background: #1D1A31;
 }
@@ -332,19 +320,18 @@ label {
 input {
   border: none;
   background: none;
-  width: 400px;
   outline: none;
   padding: 0.5rem;
   color: #fff;
 }
 
+div.brand {
+  display: none;
+}
+
 .container {
   width: 960px;
   margin: 0 auto;
-}
-
-body {
-  font-family: Roboto, sans-serif;
 }
 
 .stock {

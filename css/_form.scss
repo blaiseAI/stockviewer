@@ -1,26 +1,16 @@
-$bgcolor: rgb(17, 15, 29);
+$bgcolor: rgb(64, 37, 68);
 $inputbgcolor: #1D1A31;
 $primaryText: #fff;
 form {
+    display: flex;
     background: $bgcolor;
     color: $primaryText;
 }
 
-.form-nav {
-    display: flex;
-    align-items: center;
-    padding: 0.5rem;
-    p {
-        color: $primaryText;
-        font-weight: 700;
-    }
-}
-
 .input {
-    width: 400px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-left: 150px;
     border-radius: 5px;
     background: $inputbgcolor;
 }
@@ -40,7 +30,6 @@ label {
 input {
     border: none;
     background: none;
-    width: 400px;
     outline: none;
     padding: 0.5rem;
     color: $primaryText;

@@ -9,6 +9,7 @@
 
     <link rel="manifest" href="site.webmanifest" />
     <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -28,11 +29,13 @@
     <!-- Add your site or application content here -->
     <!-- Add your site or application content here -->
     <form class="frm symbol">
-        <div class="form-nav container">
-            <p>Trading View</p>
-            <div class="input">
-                <input type="text" id="symbol" name="symbol" placeholder="Search" autofocus/>
-                <button type="submit"><i class="material-icons">search</i></button>
+        <div class="row p-2 container d-flex align-items-center ">
+            <div class="col-12 col-md-4 brand d-sm-none d-md-block">Trading View</div>
+            <div class="col-12 col-md-8">
+                <div class="input">
+                    <input type="text" id="symbol" name="symbol" placeholder="Search" autofocus/>
+                    <button type="submit"><i class="material-icons">search</i></button>
+                </div>
             </div>
         </div>
     </form>
